@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'empresas.apps.EmpresasConfig',
     'funcionarios.apps.FuncionariosConfig',
     'horasExtras.apps.HorasextrasConfig',
+    'core.apps.CoreConfig',
 ]
 
 MIDDLEWARE = [
@@ -40,7 +41,7 @@ ROOT_URLCONF = 'Gestao_Rh.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
